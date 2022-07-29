@@ -6,7 +6,7 @@
   }
   
   .aboutTop {
-    width: 100%;
+    width: 80%;
     height: 45%;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +24,7 @@
   
   .aboutBottom p {
     width: 1200px;
+    color: blueviolet;
   }
   
   .about .aboutBottom h1 {

@@ -17,19 +17,19 @@
   }
   
   .headerContainer h1 {
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     font-size: 90px;
     height: 60px;
     font-weight: 50;
-    color: black;
+    color: rgb(104, 207, 20);
   }
   
   .headerContainer p {
     padding: 0;
     font-size: 40px;
     font-weight: lighter;
-    color: black;
+    color: rgb(216, 156, 213);
   }
   
   .headerContainer button {
@@ -38,7 +38,7 @@
     border-radius: 5px;
     cursor: pointer;
     justify-content: center;
-    background-color: #121619;
+    background-color: #47db0d;
     height: 50px;
     width: 180px;
     color: white;
