@@ -1,9 +1,14 @@
-import React from "react";
+import React, { setData, useEffect } from "react";
 import { MenuList } from "../helpers/MenuList";
 import MenuItem from "../components/MenuItem";
 import "../styles/Menu.css";
 
 function Menu() {
+  useEffect(() => {
+    fetch("https://myfood578.herokuapp.com/meal")
+      .then((r) => r.json())
+      .then(setData);
+  }, []);
   return (
     
     <div className="menu">
