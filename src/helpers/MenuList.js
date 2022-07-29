@@ -1,4 +1,4 @@
-import Chole from "../assets/chhola.jpg";
+import rice from "../assets/rice.jpg";
 import Dosa from "../assets/dosa.jpg";
 import Paneer from "../assets/paneer.jpg";
 import Idli from "../assets/idli.jpg";
@@ -7,9 +7,9 @@ import Rajasthani from "../assets/rajasthani.jpg";
 
 export const MenuList = [
   {
-    name: "Chole Bhature",
-    image: Chole,
-    price: 250,
+    name: "Rice",
+    image: rice,
+    price: 1000,
   },
   {
     name: "Masala Dosa",

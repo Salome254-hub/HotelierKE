@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BannerImage from "../assets/food.jpeg";
+import BannerImage from "../assets/meal.jpg";
 import "../styles/Home.css";
 
 function Home() {
@@ -8,7 +8,7 @@ function Home() {
     <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
       <div className="headerContainer">
         <h1 style={{  fontStyle:"italic"}}> HotelierKE</h1>
-        <p>AFRICAN FOOD AT A CLICK</p>
+        <p> Want scrumptious!!</p>
         <Link to="/menu">
           <button> ORDER NOW </button>
         </Link>
