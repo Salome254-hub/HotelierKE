@@ -1,4 +1,4 @@
-import React, { setData, useEffect } from "react";
+import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -10,11 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
 
-    useEffect(() => {
-        fetch("https://myfood578.herokuapp.com/meal")
-          .then((r) => r.json())
-          .then(setData);
-      }, []);
+    
 
   return (
     <div className="App">

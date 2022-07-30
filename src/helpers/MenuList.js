@@ -1,39 +1,75 @@
-import rice from "../assets/rice.jpg";
-import Dosa from "../assets/dosa.jpg";
-import Paneer from "../assets/paneer.jpg";
-import Idli from "../assets/idli.jpg";
-import Gujrati from "../assets/gujrati.jpeg";
-import Rajasthani from "../assets/rajasthani.jpg";
+import React, {useState, useEffect} from 'react'
+import MenuItem from '../components/MenuItem';
+import Menu from "..../pages/Menu"
 
-export const MenuList = [
-  {
-    name: "Rice",
-    image: rice,
-    price: 1000,
-  },
-  {
-    name: "Masala Dosa",
-    image: Dosa,
-    price: 280,
-  },
-  {
-    name: "Butter Paneer",
-    image: Paneer,
-    price: 350,
-  },
-  {
-    name: "Idli Vada",
-    image: Idli,
-    price: 230,
-  },
-  {
-    name: "Gujrati Thali",
-    image: Gujrati,
-    price: 450,
-  },
-  {
-    name: "Rajasthani Thali",
-    image: Rajasthani,
-    price: 499,
-  },
-];
+export const MenuList = () => {
+  const [search, setSearch] = useState("");
+  const [query, setQuery] = useState("");
+  const [food, setFood] = useState([]);
+  useEffect(() => {
+    getFood();
+  }, [query]);
+  const getFood = async () => {
+    const response = await fetch("https://salome-api.herokuapp.com/meal");
+    const data = await response.json();
+    setFood(data);
+  };
+  console.log(getFood);
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setQuery(search);
+    setSearch("");
+  };
+  // const filterSearch =
+  function handleFormChange(event) {
+    setSearch(event.target.value);
+  }
+  return (
+    <div>
+      <div></div>
+      <form className="search" onSubmit={handleFormSubmit}>
+        <input
+          className="bar"
+          type="text"
+          setFood={setFood}
+          value={search}
+          onChange={handleFormChange}
+        />
+        <button className="search-button" type="submit">
+          Search
+        </button>
+      </form>
+      {
+        food.filter((meal) => {
+          if (search === "") {
+            return meal;
+          } else if (meal.strCategory.toLowerCase().includes(search.toLocaleLowerCase())) {
+            return meal;
+          }
+        })
+          .map((meal) => (
+            <Menu
+              key={meal.idCategory}
+              name={meal.strCategory}
+              image={meal.strCategoryThumb}
+              price={meal.price}
+              description={meal.strCategoryDescription}
+            />
+          ))}
+    </div>
+  );
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
