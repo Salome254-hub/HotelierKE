@@ -1,24 +1,31 @@
 import React, {useState, useEffect} from 'react'
-import MenuItem from '../components/MenuItem';
-import Menu from "..../pages/Menu"
+import Food from './Menu';
 
 export const MenuList = () => {
-  const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("");
+  
   const [food, setFood] = useState([]);
   useEffect(() => {
     getFood();
-  }, [query]);
-  const getFood = async () => {
-    const response = await fetch("https://salome-api.herokuapp.com/meal");
-    const data = await response.json();
-    setFood(data);
+  }, []);
+
+  
+    
+  const getFood = () => {
+    fetch("https://salome-api.herokuapp.com/meal")
+      .then((response) => response.json())
+      .then((data) => {
+        setFood(data);
+      })
+      .catch((error) => console.log(error));
   };
-  console.log(getFood);
+    
+    console.log(getFood);
+  };
+
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setQuery(search);
-    setSearch("");
+    
   };
   // const filterSearch =
   function handleFormChange(event) {
@@ -40,7 +47,7 @@ export const MenuList = () => {
         </button>
       </form>
       {
-        food.filter((meal) => {
+        Food.filter((meal) => {
           if (search === "") {
             return meal;
           } else if (meal.strCategory.toLowerCase().includes(search.toLocaleLowerCase())) {
@@ -48,7 +55,7 @@ export const MenuList = () => {
           }
         })
           .map((meal) => (
-            <Menu
+            <Food
               key={meal.idCategory}
               name={meal.strCategory}
               image={meal.strCategoryThumb}
@@ -58,7 +65,7 @@ export const MenuList = () => {
           ))}
     </div>
   );
-    }
+    
 
 
 

@@ -1,4 +1,53 @@
-import React from 'react';
+
+import React, { useState, useEffect } from "react";
+import MenuItem from "./MenuItem"
+
+const Menu = () => {
+  const [food, setFood] = useState([]);
+
+  useEffect(() => {
+    fetch("https://salome-api.herokuapp.com/meal")
+      .then((r) => r.json())
+      .then((data) => setFood(data));
+  }, []);
+const foodlist= food.map((meal) => (
+  <MenuItem
+    key={meal.idCategory}
+    name={meal.strCategory}
+    image={meal.strCategoryThumb}
+    price={meal.price}
+    description={meal.strCategoryDescription}
+  />
+))
+  return (
+    <div className="food">
+      {foodlist}
+    </div>
+  );
+};
+
+export default Menu;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*import React from 'react';
+
 
 const Food = ({ id, name, image, price, description }) => {
   return (
@@ -13,7 +62,7 @@ const Food = ({ id, name, image, price, description }) => {
 };
 export default Food
 
-
+*/
 
 
 

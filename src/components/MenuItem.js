@@ -1,13 +1,26 @@
-import React from "react";
+import React from 'react'
 
-function MenuItem({ image, name, price }) {
+function MenuItem({id,name,image,price,description}) {
   return (
-    <div className="menuItem">
-      <div style={{ backgroundImage: `url(${image})` }}> </div>
-      <h1> {name} </h1>
-      <p> sh{price} </p>
-    </div>
-  );
+    <div className="food" key={id}>
+    <img src={image} alt="Keroma loading" />
+    <h2>{name}</h2>
+    <p>{description}</p>
+    <p>{price}</p>
+    <button>Order</button>
+  </div>
+  )
 }
 
-export default MenuItem;
+export default MenuItem
+
+
+
+
+
+
+
+
+
+
+
