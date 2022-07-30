@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 import MenuItem from "./MenuItem"
+import "../styles/Menu.css"
 
 const Menu = () => {
   const [food, setFood] = useState([]);
@@ -20,7 +21,7 @@ const foodlist= food.map((meal) => (
   />
 ))
   return (
-    <div className="food">
+    <div className="menuItem">
       {foodlist}
     </div>
   );

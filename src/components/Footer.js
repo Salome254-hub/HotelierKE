@@ -11,7 +11,7 @@ function Footer() {
       <div className="socialMedia">
         <InstagramIcon /> <TwitterIcon /> <FacebookIcon /> <LinkedInIcon />
       </div>
-      <p> &copy; 2021 HotelierKE.com</p>
+      <p> &copy; 2022 HotelierKE.com</p>
     </div>
   );
 }
