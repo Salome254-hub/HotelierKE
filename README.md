@@ -1,22 +1,22 @@
-# _**HOTELIER**_
+# _**HotelierKE**_
 ---
 ###  **BRIEF DESCRIPTION**
-This application can be used by anyone who is aspiring to go for a vacation,anyone seeking a good 5-star hotel anywhere in the world, anyone searching for good accommodation with good vibes and chill. Moreover, Hotelier can be used by any hotel owner looking forward to market their services digitally and to get a world class reputation!!
+ Hotelier can be used by any hotel owner looking forward to market their services digitally and to get a world class reputation!!
 
 `This is the landing page of my website`
 ![Backgound.img](src/assets/home.png)
 
 ---
 
-`The rest of the page`
+`This is the menu page of my website`
 ![Backgound2.img](src/assets/menu.png)
 
 ---
-`The rest of the page`
+`This is the about page of my website`
 ![Backgound3.img](src/assets/about.png)
 
 ---
-`The rest of the page`
+`This is the contacts page of my website`
 ![Backgound4.img](src/assets/contact.png)
 
 ---
@@ -24,15 +24,47 @@ This application can be used by anyone who is aspiring to go for a vacation,anyo
 ### **CONTRIBUTORS**
 Hotelier is a development by Salome Mabonga a software engineer.
 ### **DESCRIPTION**
-This application is a great source of information that links both hotel owners and clients both locally and internationally.On the clients side, Hotelier is very useful as it can be used by both local and international tourist who love travelling and visiting great hotels among the most prestigious cities in the world without having to go to that place physically to get to know what services are being offerred hence it saves time, money and energy helping clients budget on the cost they will incur before hand.On the hotel owners side, this is a great application to showcase to the world all that you got, that is the meals you offer, accommodation services like airbnb, suitability of your graphical location e.g a hotel suited near the beach, services offered, recreational activities you have, any other services and many more. It allows interactivity of both clients and the hoteliers who are miles and miles away!!
+This application is a great source of information that links both hotel owners and clients both locally and internationally.On the clients side, Hotelier is very useful as it can be used by both local and international tourist who love trying out delicious meals and visiting great hotels.This is a great application to showcase to the world all that you got, that is in the meals you offer.
 
-### **SETUP REQUIREMENTS**
+# Getting Started with Create React App
 
-- Visual studio
-- browser-chrome
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 ### **KNOWN BUGS**
-The background image tends to take time loading but its a WIP to be resolved soonest.
+The menu images tend to take time loading but its a WIP to be resolved soonest.
 ### **TECHNOLOGIES USED**
 HTML
 
