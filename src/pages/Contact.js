@@ -13,18 +13,18 @@ function Contact() {
         <h1> Contact Us</h1>
 
         <form id="contact-form" method="POST">
-          <label htmlFor="name">Full Name</label>
-          <input name="name" placeholder="Enter full name..." type="text" />
-          <label htmlFor="email">Email</label>
-          <input name="email" placeholder="Enter email..." type="email" />
-          <label htmlFor="message">Message</label>
+          <label htmlFor="name">Full Name</label> <br></br>
+          <input name="name" placeholder="Enter full name..." type="text" /> <br></br>
+          <label htmlFor="email">Email</label> <br></br>
+          <input name="email" placeholder="Enter email..." type="email" /> <br></br>
+          <label htmlFor="message">Message</label> <br></br>
           <textarea
             rows="6"
             placeholder="Enter message..."
             name="message"
             required
-          ></textarea>
-          <button type="submit"> Send Message</button>
+          ></textarea> <br></br>
+          <button type="submit"> Send Message</button> <br></br>
         </form>
       </div>
     </div>
