@@ -22,9 +22,9 @@
 ---
 
 ### **CONTRIBUTORS**
-Hotelier is a development by Salome Mabonga a software engineer.
+HotelierKE is a development by Salome Mabonga a software engineer.
 ### **DESCRIPTION**
-This application is a great source of information that links both hotel owners and clients both locally and internationally.On the clients side, Hotelier is very useful as it can be used by both local and international tourist who love trying out delicious meals and visiting great hotels.This is a great application to showcase to the world all that you got, that is in the meals you offer.
+This application is a great source of information that links both hotel owners and clients both locally and internationally.Hotelier is very useful as it can be used by both local and international tourist who love trying out delicious meals and visiting great hotels.This is a great application to showcase to the world all the variety of meals you've got!! 
 
 # Getting Started with Create React App
 
